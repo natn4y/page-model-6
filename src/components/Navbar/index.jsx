@@ -137,7 +137,7 @@ export function Navbar() {
             >
               <a
                 href={item.href}
-                className={`flex items-center text-stone-600 hover:text-[#BCB279] uppercase ${item.submenu ? 'pl-2' : ''} ${item.href === window.location.pathname ? 'text-stone-600' : 'text-stone-600'}`}
+                className={`flex items-center text-stone-600 hover:text-[#BCB279] uppercase ${item.submenu ? 'pl-2' : ''} ${item.href === (typeof window !== 'undefined' ? window.location.pathname : '') ? 'text-stone-600' : 'text-stone-600'}`}
                 onClick={(e) => {
                   if (item.submenu) {
                     e.preventDefault();
@@ -189,14 +189,14 @@ export function Navbar() {
         >
           <AiFillCloseSquare />
         </button>
-        <img src="/img/logo.png" className='w-[150px]' alt="" />
+        <img src="/img/logo.png" className="w-[150px]" alt="" />
         <ul className="mt-8">
           {activeMobileMenuIndex === null ? (
             navItems.map((item, index) => (
               <li key={index}>
                 <a
                   className={`flex items-center w-full py-2 px-4 hover:bg-[#83C6BD] hover:text-white transition-all ${
-                    item.href === window.location.pathname ? 'bg-[#83C6BD] text-white' : ''
+                    item.href === (typeof window !== 'undefined' ? window.location.pathname : '') ? 'bg-[#83C6BD] text-white' : ''
                   }`}
                   href={item.href}
                   onClick={(e) => {
