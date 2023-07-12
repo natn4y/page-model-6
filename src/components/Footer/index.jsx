@@ -2,7 +2,7 @@ import SocialMediaIcon from '../SocialMediaIcon'
 
 export function Footer() {
   const helpfulLinks = [
-    'HELPFUL LINKS',
+    'LINKS ÚTEIS',
     'Become a VIP',
     'About The Spa Dr.®',
     'The Skin Quiz',
@@ -14,7 +14,7 @@ export function Footer() {
   ]
 
   const customerSupport = [
-    'CUSTOMER SUPPORT',
+    'SUPORTE AO CLIENTE',
     'Order History',
     'Free Shipping',
     'Refund Policy',
@@ -24,7 +24,7 @@ export function Footer() {
   ]
 
   const contactUs = [
-    'CONTACT US',
+    'CONTATE-NOS',
     'team@thespadr.com',
     '1-866-377-4404',
     'PO Box 981352',
@@ -75,18 +75,16 @@ export function Footer() {
           </ul>
         </div>
         <div className="p-4 xl:max-w-[290px]">
-          <p className="mb-2">FREE CONSULT</p>
+          <p className="mb-2">CONSULTA GRATUITA</p>
           <div className="text-[15px] leading-7">
             <b>
-              Are you wondering if The Spa Dr. skin care
-              line is right for you?{' '}
+              Você está se perguntando se a linha de cuidados com a pele do Spa Dr. é adequada para você?{' '}
             </b>
             <span>
-              If so, schedule a complimentary consultation
-              with one of our skin experts.
+             Se sim, agende uma consulta gratuita com um de nossos especialistas em cuidados com a pele.
             </span>
-            <p className="mt-5 underline">
-              Schedule Free Consult Now
+            <p className="mt-5 underline cursor-pointer">
+              Agende agora sua consulta gratuita.
             </p>
           </div>
         </div>

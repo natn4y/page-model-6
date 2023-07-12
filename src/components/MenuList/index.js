@@ -30,15 +30,7 @@ export const navItems = [
     href: "#",
   },
   {
-    title: "ABOUT",
-    href: "#",
-  },
-  {
-    title: "LOG IN",
-    href: "#",
-  },
-  {
-    title: "CART",
+    title: "SOBRE",
     href: "#",
   },
 ];
